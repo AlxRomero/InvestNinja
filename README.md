@@ -1,6 +1,10 @@
 # InvestNinja
 AI-Powered Patent Insights
 
+For running the Streamlit application:
+`streamlit run main.py`
+
+
 Steps for running `test_vertex.py`:
 1. Setup up Google Cloud SDK and select the `investninja` project
     - `gcloud init`
