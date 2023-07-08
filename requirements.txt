@@ -1,0 +1,5 @@
+chromadb
+google-cloud-aiplatform
+streamlit
+langchain
+openai
