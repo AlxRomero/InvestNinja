@@ -1,3 +1,5 @@
+pip install vertexai
+
 from vertexai.preview.language_models import TextGenerationModel
 
 
