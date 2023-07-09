@@ -6,8 +6,10 @@ For running the Streamlit application:
 
 
 Steps for running `test_vertex.py`:
-1. Setup up Google Cloud SDK and select the `investninja` project
+1. Install Google Cloud SDK 
+2. Select the `investninja` project during init
     - `gcloud init`
     - `gcloud auth application-default login`
-2. Set up the `GOOGLE_APPLICATION_CREDENTIALS` envionment variable in .bashrc or .zshrc file so that it points to the application_default_credentials.json file
-3. Run `python test_vertex.py`
+3. Set up the `GOOGLE_APPLICATION_CREDENTIALS` envionment variable in .bashrc or .zshrc file so that it points to the application_default_credentials.json file
+4. Install the Python packages using the command `pip install -r requirements.txt`
+5. Run `python test_vertex.py`
