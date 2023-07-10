@@ -3,3 +3,5 @@ google-cloud-aiplatform
 streamlit
 langchain
 openai
+pypdf
+tiktoken
