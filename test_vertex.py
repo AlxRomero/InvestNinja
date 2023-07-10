@@ -1,4 +1,3 @@
-pip install vertexai
 #Im just creating a little change to check if it works
 
 
