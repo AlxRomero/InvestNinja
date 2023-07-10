@@ -28,7 +28,7 @@ if uploaded_file is not None:
 loader = PyPDFLoader(temp_file_path)
 pages = loader.load_and_split()
 
-llm = OpenAI(temperature=0.1, verbose=True)
+llm = VertexAI(temperature=0.1, verbose=True)
 embeddings = OpenAIEmbeddings()
 
 store = Chroma.from_documents(pages, embeddings, collection_name='Pdf')
