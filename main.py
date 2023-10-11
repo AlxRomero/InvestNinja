@@ -1,16 +1,11 @@
 import os
 import tempfile
 
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'application_default_credentials.json'
+os.environ['OPENAI_API_KEY'] = 'application_default_credentials.json'
 
-from google.cloud import aiplatform
-
-aiplatform.init(
-    project='investninja'
-)
 
 import streamlit as st
-from langchain.llms import VertexAI, OpenAI
+from langchain.llms import OpenAI
 from langchain.embeddings import OpenAIEmbeddings
 from langchain.document_loaders import PyPDFLoader
 from langchain.vectorstores import Chroma
