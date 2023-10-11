@@ -25,13 +25,10 @@ if uploaded_file is not None:
     with open(temp_file_path, "wb") as temp_file:
         temp_file.write(uploaded_file.read())
 
-    # st.write("Full path of the uploaded file:", temp_file_path)
-
     loader = PyPDFLoader(temp_file_path)
     pages = loader.load_and_split()
 
     llm = OpenAI(temperature=0.1, verbose=True, request_timeout=120)
-    #llm = VertexAI(temperature=0.1, verbose=True, request_timeout=120)
     embeddings = OpenAIEmbeddings()
 
     store = Chroma.from_documents(pages, embeddings, collection_name='pdf')
