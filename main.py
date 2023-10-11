@@ -1,7 +1,7 @@
 import os
 import tempfile
 
-
+os.environ['OPENAI_API_KEY'] =  ""
 import streamlit as st
 from langchain.llms import OpenAI
 from langchain.embeddings import OpenAIEmbeddings
