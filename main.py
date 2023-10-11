@@ -12,7 +12,6 @@ from langchain.agents.agent_toolkits import (
     VectorStoreInfo
 )
 
-st.write("OPENAI_API_KEY:", st.secrets["OPENAI_API_KEY"])
 
 st.title('InvestNinja 🥷')
 st.subheader('Load your patent PDF, ask questions, and receive investment insights directly sourced from the document.')
