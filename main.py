@@ -48,7 +48,7 @@ if uploaded_file is not None:
         verbose=True
     )
 
-    prompt = "Explain it to an investor"
+    prompt = "explain it to an investor in simpler terms"
 
     response = agent_executor.run(prompt)
     st.write(response)
