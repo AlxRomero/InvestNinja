@@ -1,4 +1,3 @@
-google-cloud-aiplatform
 streamlit
 langchain==0.0.228
 openai
