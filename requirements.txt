@@ -5,4 +5,3 @@ langchain
 openai
 pypdf
 tiktoken
-sqlite3 >= 3.35.0
