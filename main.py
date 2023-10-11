@@ -48,7 +48,7 @@ if uploaded_file is not None:
         verbose=True
     )
 
-    prompt = "explain it to an investor in simpler terms"
+    prompt = "Please provide an explanation of the following patent summary in simple terms that an investor can understand."
 
     response = agent_executor.run(prompt)
     st.write(response)
