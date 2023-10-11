@@ -48,7 +48,7 @@ if uploaded_file is not None:
         verbose=True
     )
 
-    prompt = "What is summary of the pdf?"
+    prompt = "Explain the pdf in 3 sentences"
 
     response = agent_executor.run(prompt)
     st.write(response)
