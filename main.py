@@ -12,6 +12,7 @@ from langchain.agents.agent_toolkits import (
     VectorStoreInfo
 )
 
+os.environ['OPENAI_API_KEY']=st.secrets['openai_api_key']
 
 st.title('InvestNinja 🥷')
 st.subheader('Load your patent PDF, ask questions, and receive investment insights directly sourced from the document.')
