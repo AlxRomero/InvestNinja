@@ -49,8 +49,8 @@ if uploaded_file is not None:
     )
 
     #prompt = "Please provide an explanation of the following patent abstract in simple terms that an investor can understand."
-    
-    prompt = "Write it as if it were a patent abstract."
+    #prompt = "Write it as if it were a patent abstract."
+    prompt = "What specific advantages or improvements does this semiconductor-related method offer in terms of performance, integration, and production efficiency?"
     response = agent_executor.run(prompt)
     st.write(response)
 
