@@ -22,7 +22,7 @@ from langchain.agents.agent_toolkits import (
 
 
 st.title('InvestNinja 🥷')
-st.subheader('Load your patent PDF, ask questions, and receive investment advice directly sourced from the document.')
+st.subheader('Load your patent PDF, ask questions, and receive investment insights directly sourced from the document.')
 
 st.subheader('Upload your pdf')
 uploaded_file = st.file_uploader('', type=(['pdf',"tsv","csv","txt","tab","xlsx","xls"]))
