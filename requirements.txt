@@ -4,3 +4,4 @@ langchain
 openai
 pypdf
 tiktoken
+pysqlite3-binary
