@@ -1,4 +1,4 @@
-chromadb
+chromadb==0.3.35
 google-cloud-aiplatform
 streamlit
 langchain
