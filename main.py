@@ -1,7 +1,6 @@
 import os
 import tempfile
 
-os.environ['OPENAI_API_KEY'] =  ""
 import streamlit as st
 from langchain.llms import OpenAI
 from langchain.embeddings import OpenAIEmbeddings
@@ -35,7 +34,7 @@ if uploaded_file is not None:
     #llm = VertexAI(temperature=0.1, verbose=True, request_timeout=120)
     embeddings = OpenAIEmbeddings()
 
-    store = Chroma.from_documents(pages, embeddings, collection_name='patent-data')
+    store = Chroma.from_documents(pages, embeddings, collection_name='pdf')
 
     vectorstore_info = VectorStoreInfo(
         name="pdf",
@@ -58,10 +57,4 @@ if uploaded_file is not None:
 
     input_from_user = st.text_input('Ask you question here!')
 
-    if input_from_user:
-        response = agent_executor.run(input_from_user)
-        st.write(response)
-
-        with st.expander('Document Similarity Search'):
-            search = store.similarity_search_with_score(input_from_user)
-            st.write(search[0][0].page_content)
+ 
