@@ -1,8 +1,6 @@
 import os
 import tempfile
 
-os.environ['OPENAI_API_KEY'] = 'application_default_credentials.json'
-
 
 import streamlit as st
 from langchain.llms import OpenAI
